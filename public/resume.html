@@ -1,0 +1,883 @@
+<!doctype html>
+<html>
+	<head>
+
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, user-scalable=no, minimal-ui'>
+
+	<title>Hannes Doering</title>
+
+	<style>
+        body {
+        background: #EEEEEE;
+        font: 13px "Times New Roman", Times, sans-serif;
+        line-height: 1.4;
+        margin: 40px 0;
+        }
+
+        a, a:visited, a:hover, a:active {
+        color: #0026ff !important;
+        }
+
+        em {
+        color: #999;
+        }
+        p {
+        line-height: 1.4;
+        }
+        ul {
+        margin-bottom: 0;
+        }
+        li {
+        margin-bottom: 2px;
+        }
+        a {
+        text-decoration: none;
+        }
+
+        #resume {
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 80px 100px;
+        background: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 4px #aaa;
+        -webkit-box-shadow: 2px 2px 4px #aaa;
+        }
+
+        /* Section seperators */ 
+
+        .hline {
+        border-top: 1px solid black !important;
+        border: 0px;
+        }
+
+        .lineBlock {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        }
+
+        .lineHeader {
+        font-weight: bold;
+        margin-bottom: -5px;
+        font-size: 11pt;
+        }
+        /* Title */ 
+
+        #nameBlock {
+        text-align: center;
+        }
+
+        .name {
+        font-weight: bold;
+        }
+
+        .label {
+        font-style: italic;
+        }
+
+        /* General */
+
+        .sectionBlock {
+        padding-right: 20px;
+        }
+
+        /* Contact block */
+
+        .contactBlock {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        padding: 10px;
+        
+        }
+
+        #profilesBlock {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 0px;
+        padding-left: 10px;
+        }
+
+        /* Appointments block */ 
+
+        .appointmentsRow {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-gap: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        }
+
+        .details {
+        margin-top: 3px;
+        }
+
+        .detailRow {
+        padding-left: 10px;
+        margin-top: -2px;
+        }
+
+        /* Papers block */
+
+        div.pubsRow:not(:last-child) {
+        margin-bottom: 10px;
+        }
+
+
+
+
+        /* Title */ 
+
+        .coursesList {
+        width: 28%;
+        vertical-align: top;
+        display: inline-block;
+        }
+
+        .largeFont {
+        font-size: 20px;
+        }
+
+        .smallFont {
+        font-size: 13px;
+        }
+
+        .sectionName {
+        width: 18%;
+        vertical-align: top;
+        display: inline-block;
+        }
+
+        .sectionContent {
+        width: 80%;
+        vertical-align: top;
+        display: inline-block;
+        }
+
+        .sectionContent ul {
+        padding-left: 20px;
+        margin-top: 6px;
+        list-style-type: circle;
+        }
+
+        .sectionContent .title {
+        font-weight: bold;
+        }
+
+        .sectionContent .date {
+        float: right;
+        }
+
+        .sectionContent .separator {
+        height: 14px;
+        }
+
+        .sectionLine {
+        border-style: dashed;
+        border-width: 1px;
+        border-color: #CFCFCF;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        }
+
+        .divider {
+        font-weight: bold;
+        margin-left: 5px;
+        margin-right: 5px;
+        }
+
+        .summary {
+        margin-top: 6px;
+        }
+
+        .skillBlock {
+        margin-bottom: 4px;
+        }
+
+        .jobBlock {
+        page-break-inside: avoid;
+        }
+
+        /* Media Queries */
+        @media only screen and (max-width: 40em) {
+        body {
+            margin: 0;
+            font-size: 14px;
+        }
+        #resume {
+            margin: 0 auto;
+            max-width: 600px;
+            padding: 0.5em 1em;
+            border: none;
+        }
+        .sectionBlock {
+            flex-direction: column;
+        }
+        .sectionContent {
+            width: 100%;
+        }
+        .sectionContent .date {
+            padding-right: 2em;
+        }
+        .sectionName {
+            width: auto;
+        }
+        .largeFont {
+            font-size: 20px;
+        }
+        .smallFont {
+            font-size: 14px;
+        }
+        }
+
+        @media print {
+        body {
+            background: #FFFFFF;
+        }
+        #resume {
+            margin: 0 auto;
+            max-width: 600px;
+            padding: 0px 0px;
+            border: 0px;
+            background: #fff;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+        }
+
+        a {
+            color: black;
+        }
+        }
+
+	</style>
+
+	</head>
+    
+	<body>
+
+        <div id='resume'>
+
+        <!-- Bio details -->
+        
+        <div id='nameBlock' class='largeFont'>
+            <span class='name'>
+                Hannes Doering
+            </span>
+            <br>
+            
+                <span class='label'>Curriculum Vitae</span>
+            
+        </div>
+
+        <hr class='hline'>
+
+        <div id='basicsBlock' class='smallFont'>
+        <div class='contactBlock'>
+            <div class='colLeft'>
+            
+            <span class='currentAffiliation'>University of Muenster</span> <br>
+            
+            
+            <span class='addressOffice'>Universitaetsstrasse 14-16</span><br>
+            
+            
+            <span class='addressDetails'>48143 Muenster</span><br>
+            
+            </div>
+
+            <div class='colRight'>
+            
+            
+                <span class='email'>hannes.doering@wiwi.uni-muenster.de</span><br>
+            
+            
+                <span class='website'><a href="https://www.hannesdoering.com">https://www.hannesdoering.com</a></span><br>
+            
+            </div>
+        </div>
+
+        
+        
+            <div id='profilesBlock'>
+            
+                
+                <div>
+                    
+                    <span style='font-weight: bold;'>LinkedIn:</span> 
+                    
+                    <a href="https://www.linkedin.com/in/hannes-doering">https://www.linkedin.com/in/hannes-doering</a> <br>
+                </div>
+                
+            
+            </div>
+        
+        </div>
+
+        <div class='lineBlock'>
+            <div class='lineHeader'>Positions</div>
+            <hr class='hline'>
+        </div>
+
+        <!-- Academic Appointments -->
+
+        
+            <div id='appointmentsBlock' class="sectionBlock">
+            
+                <div class='appointmentsRow'>
+                <div class='school'>
+                    University of Muenster
+                    
+                    – Research & Teaching Assistant
+                    
+                </div>
+                <div class='period' style='text-align:right;'>
+                    2019 – present
+                </div>
+                
+                </div> 
+            
+            </div>
+        
+
+        <!-- Education -->
+
+        <div class='lineBlock'>
+            <div class='lineHeader'>Education</div>
+            <hr class='hline'>
+        </div>
+
+        
+            <div id='educationBlock' class="sectionBlock">
+            
+                <div class='appointmentsRow'>
+                <div class='school'>
+                
+                PhD in Accounting
+                
+                
+                – University of Muenster
+                
+            </div>
+            <div class='period' style='text-align:right;'>
+                2019 – present
+            </div>
+            
+            </div> 
+            
+                <div class='appointmentsRow'>
+                <div class='school'>
+                
+                Visiting PhD (4 months)
+                
+                
+                – University of Washington
+                
+            </div>
+            <div class='period' style='text-align:right;'>
+                2023 – 2024
+            </div>
+            
+            </div> 
+            
+                <div class='appointmentsRow'>
+                <div class='school'>
+                
+                MSc in Business Administration (Accounting)
+                
+                
+                – University of Cologne
+                
+            </div>
+            <div class='period' style='text-align:right;'>
+                2017 – 2019
+            </div>
+            
+            </div> 
+            
+                <div class='appointmentsRow'>
+                <div class='school'>
+                
+                Visiting Student (4 months)
+                
+                
+                – University of British Columbia
+                
+            </div>
+            <div class='period' style='text-align:right;'>
+                2018 – 2018
+            </div>
+            
+            </div> 
+            
+                <div class='appointmentsRow'>
+                <div class='school'>
+                
+                BSc in Business Administration
+                
+                
+                – University of Tuebingen
+                
+            </div>
+            <div class='period' style='text-align:right;'>
+                2012 – 2016
+            </div>
+            
+            </div> 
+            
+                <div class='appointmentsRow'>
+                <div class='school'>
+                
+                Visiting Student (4 months)
+                
+                
+                – Universidad de Monterrey
+                
+            </div>
+            <div class='period' style='text-align:right;'>
+                2014 – 2014
+            </div>
+            
+            </div> 
+            
+
+            </div>
+        
+
+        <!-- Research -->
+
+        <div class='lineBlock'>
+            <div class='lineHeader'>Published Research</div>
+            <hr class='hline'>
+        </div>
+
+        
+            <div id='pubsBlock' class="sectionBlock">
+            
+                <div class='pubsRow'>
+                <span>"OKRs im deutschen Mittelstand" 
+                    (with Martin Artz).  Controlling & Management Review, 2023
+                    </span>
+                </div> 
+            
+                <div class='pubsRow'>
+                <span>"Exploiting Data from Field Experiments" 
+                    (with Martin Artz).  Handbook of Market Research, 2021
+                    </span>
+                </div> 
+            
+            </div>
+        
+        
+        <div class='lineBlock'>
+            <div class='lineHeader'>Working Papers</div>
+            <hr class='hline'>
+        </div>
+
+        
+            <div id='workingBlock' class="sectionBlock">
+            
+                <div class='pubsRow'>
+                    <span>
+                        "Transformation Talk: Drivers and Economic Consequences" 
+                        (with Martin Artz and Simon Schoelzel). 
+                    </span>     
+                </div> 
+            
+                <div class='pubsRow'>
+                    <span>
+                        "Firms' Motivation for Setting Science-Based Carbon Reduction Targets" 
+                        (with Martin Artz and Jens Boeke). 
+                    </span>     
+                </div> 
+            
+            </div>
+        
+
+        <!-- Teaching -->
+
+        <div class='lineBlock'>
+            <div class='lineHeader'>Teaching</div>
+            <hr class='hline'>
+        </div>
+
+        
+            <div id='teachingBlock' class="sectionBlock">
+            
+                <div class='teachingRow' style="padding-bottom:5px;">
+                <span style='padding-bottom:5px; display:block;'><b>Performance Management Strategy Execution </b>- Master's Level (Fall)</span> 
+                
+                    <ul class='details'>
+                    
+                        <li class='detailRow'> <span style='text-align:left;'>University of Muenster </span>
+                        <span class='period' style='float: right;'>
+                            2019 - 2022
+                        </span>
+                        </li>
+                        
+                        <div style="margin-bottom: 5px;">
+                        
+                            <div style="margin-left: 10px; margin-right:150px;">- Performance measurement and incentive systems for corporate alignment.</div>
+                        
+                        </div>
+                        
+                    
+                    </ul>
+                
+                </div> 
+            
+                <div class='teachingRow' style="padding-bottom:5px;">
+                <span style='padding-bottom:5px; display:block;'><b>Organizational Design and Financial Management </b>- Master's Level (Summer)</span> 
+                
+                    <ul class='details'>
+                    
+                        <li class='detailRow'> <span style='text-align:left;'>University of Muenster </span>
+                        <span class='period' style='float: right;'>
+                            2020 - 2024
+                        </span>
+                        </li>
+                        
+                        <div style="margin-bottom: 5px;">
+                        
+                            <div style="margin-left: 10px; margin-right:150px;">- Financial and organizational design for start-ups and scale-ups</div>
+                        
+                        </div>
+                        
+                    
+                    </ul>
+                
+                </div> 
+            
+                <div class='teachingRow' style="padding-bottom:5px;">
+                <span style='padding-bottom:5px; display:block;'><b>Entrepreneurial Management </b>- MBA (Summer)</span> 
+                
+                    <ul class='details'>
+                    
+                        <li class='detailRow'> <span style='text-align:left;'>University of Muenster </span>
+                        <span class='period' style='float: right;'>
+                            2021 - 2022, 2024
+                        </span>
+                        </li>
+                        
+                        <div style="margin-bottom: 5px;">
+                        
+                            <div style="margin-left: 10px; margin-right:150px;">- Financial and organizational design for start-ups and scale-ups</div>
+                        
+                        </div>
+                        
+                    
+                    </ul>
+                
+                </div> 
+            
+            </div>
+        
+
+        <!-- Industry Experience -->
+        
+        <div class='lineBlock'>
+            <div class='lineHeader'>Industry Experience</div>
+            <hr class='hline'>
+        </div>
+
+        
+            <div id='appointmentsBlock' class="sectionBlock">
+            
+                <div class='appointmentsRow'>
+                <div class='school'>
+                    Trumpf Financial Services
+                    
+                    – Intern (5 months)
+                    
+                </div>
+                <div class='period' style='text-align:right;'>
+                    2017 – 2017
+                </div>
+                
+                    <ul class='details'>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                    </ul>
+                
+                </div> 
+            
+                <div class='appointmentsRow'>
+                <div class='school'>
+                    Trumpf Laser Technologies
+                    
+                    – Intern (6 months)
+                    
+                </div>
+                <div class='period' style='text-align:right;'>
+                    2016 – 2017
+                </div>
+                
+                    <ul class='details'>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                    </ul>
+                
+                </div> 
+            
+                <div class='appointmentsRow'>
+                <div class='school'>
+                    Robert Bosch
+                    
+                    – Intern (3 months)
+                    
+                </div>
+                <div class='period' style='text-align:right;'>
+                    2015 – 2016
+                </div>
+                
+                    <ul class='details'>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                        <li class='detailRow'> </li>
+                    
+                    </ul>
+                
+                </div> 
+            
+            </div>
+        
+
+        <!-- Service -->
+
+        <div class='lineBlock'>
+            <div class='lineHeader'>Invited Presentations</div>
+            <hr class='hline'>
+        </div>
+
+        <div id='presentationBlock' class="sectionBlock">
+            
+        </div>
+                
+        <div class='lineBlock'>
+            <div class='lineHeader'>Invited Talks</div>
+            <hr class='hline'>
+        </div>
+
+        <div id='talkBlock' class="sectionBlock">
+            
+        </div>
+
+        <div class='lineBlock'>
+            <div class='lineHeader'>External Service</div>
+            <hr class='hline'>
+        </div>
+
+        <div style="margin-bottom:-5px;">Ad Hoc Referee</div>
+
+        <ul style="margin-bottom: 10px;">
+            
+        </ul>
+
+        <div style="margin-bottom:-5px;">Conference Referee</div>
+
+        <ul style="margin-bottom: 0px;">
+            
+        </ul>
+
+        <!-- Footer -->
+
+        <div class='lineBlock'>
+            <div class='lineHeader'>Miscellaneous</div>
+            <hr class='hline'>
+          </div>  
+
+        
+
+        
+
+        <div id='languages' class="sectionBlock">
+            <div class='sectionName'>
+                <span>LANGUAGES</span>
+            </div>
+            <div class='sectionContent'>
+                
+                <span class='language'>German</span>
+                
+                <span class='fluency'><em>(Native speaker)</em></span>
+                
+                <span>,</span>
+                
+                <span class='language'>English</span>
+                
+                <span class='fluency'><em>(Fluent)</em></span>
+                
+                <span>,</span>
+                
+                <span class='language'>Spanish</span>
+                
+                <span class='fluency'><em>(Intermediate)</em></span>
+                
+                <span>,</span>
+                
+                <span class='language'>French</span>
+                
+                <span class='fluency'><em>(Basic)</em></span>
+                
+                
+                
+            </div>
+            <hr class='hline'>
+        </div>
+        
+
+        
+
+        <span style="text-align:center; display:block; margin-top:20px; font-size:14px;" id="updateDate"><b>Last updated: </b>October 22, 2023</span>
+        </div>
+    </body>
+</html>

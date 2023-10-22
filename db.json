@@ -1,0 +1,201 @@
+{
+	"basics":{
+		"name":"Hannes Doering",
+		"label":"Curriculum Vitae",
+		"currentAffiliation":"University of Muenster",
+		"addressOffice":"Universitaetsstrasse 14-16",
+		"addressDetails":"48143 Muenster",
+		"email":"hannes.doering@wiwi.uni-muenster.de",
+		"website":"https://www.hannesdoering.com",
+		"profiles":[
+			{
+				"label":"LinkedIn",
+				"url":"https://www.linkedin.com/in/hannes-doering"
+			}
+		]
+	},
+	"appointments":[
+		{
+			"school":"University of Muenster",
+			"position":"Research & Teaching Assistant",
+			"startDate":"2019",
+			"endDate":"present",
+			"details":[
+				
+			]
+		}
+	],
+	"education":[
+		{
+			"school":"University of Muenster",
+			"degree":"PhD in Accounting",
+			"startDate":"2019",
+			"endDate":"present"
+		},
+		{
+			"school":"University of Washington",
+			"degree":"Visiting PhD (4 months)",
+			"startDate":"2023",
+			"endDate":"2024"
+		},
+		{
+			"school":"University of Cologne",
+			"degree":"MSc in Business Administration (Accounting)",
+			"startDate":"2017",
+			"endDate":"2019"
+		},
+		{
+			"school":"University of British Columbia",
+			"degree":"Visiting Student (4 months)",
+			"startDate":"2018",
+			"endDate":"2018"
+		},
+		{
+			"school":"University of Tuebingen",
+			"degree":"BSc in Business Administration",
+			"startDate":"2012",
+			"endDate":"2016"
+		},
+		{
+			"school":"Universidad de Monterrey",
+			"degree":"Visiting Student (4 months)",
+			"startDate":"2014",
+			"endDate":"2014"
+		}
+	],
+	"publishedPapers":[
+		{
+			"coauthors":"with Martin Artz",
+			"year":"2023",
+			"title":"OKRs im deutschen Mittelstand",
+			"journal":"Controlling & Management Review",
+			"links":[
+				{
+					"href":"LINK",
+					"label":"paper"
+				}
+			],
+			"abstract":"INSERT"
+		},
+		{
+			"coauthors":"with Martin Artz",
+			"year":"2021",
+			"title":"Exploiting Data from Field Experiments",
+			"journal":"Handbook of Market Research",
+			"links":[
+				{
+					"href":"LINK",
+					"label":"book contribution"
+				}
+			],
+			"abstract":"INSERT"
+		}
+	],
+	"workingPapers":[
+		{
+			"coauthors" : "with Martin Artz and Simon Schoelzel",
+			"title": "Transformation Talk: Drivers and Economic Consequences",
+			"abstract" : "INSERT",
+			"links":[],
+			"extra":"",
+			"status":""
+		},
+		{
+			"coauthors":"with Martin Artz and Jens Boeke",
+			"title":"Firms' Motivation for Setting Science-Based Carbon Reduction Targets",
+			"abstract":"INSERT",
+			"links":[],
+			"extra":"",
+			"status":""
+		}
+	],
+	"articles":[
+		{
+			"title":"This is a placeholder",
+            "date" : "Sometime in the future",
+            "summary" : "Imagine some interesting insights here",
+			"links":[
+				{
+					"href":"LINK",
+					"label":"Substack"
+				}
+			]
+		}
+	],
+	"teaching":[
+		{
+			"name":"Performance Management Strategy Execution",
+			"level":"Master's Level (Fall)",
+			"schools":[
+				{
+					"schoolName":"University of Muenster",
+					"period":"2019 - 2022"
+				}
+			]
+		},
+		{
+			"name":"Organizational Design and Financial Management",
+			"level":"Master's Level (Summer)",
+			"schools":[
+				{
+					"schoolName":"University of Muenster",
+					"period":"2020 - 2024"
+				}
+			]
+		},
+		{
+			"name":"Entrepreneurial Management",
+			"level":"MBA (Summer)",
+			"schools":[
+				{
+					"schoolName":"University of Muenster Continuing Education",
+					"period":"2021 - 2022, 2024"
+				}
+			]
+		}
+	],
+	"industries":[
+		{
+			"school":"Trumpf Financial Services",
+			"position":"Intern (5 months)",
+			"startDate":"2017",
+			"endDate":"2017",
+			"details":"Risk Management"
+		},
+		{
+			"school":"Trumpf Laser Technologies",
+			"position":"Intern (6 months)",
+			"startDate":"2016",
+			"endDate":"2017",
+			"details":"Business Segment Controlling"
+		},
+		{
+			"school":"Robert Bosch",
+			"position":"Intern (3 months)",
+			"startDate":"2015",
+			"endDate":"2016",
+			"details":"Group Accounting and Consolidation"
+		}
+	],
+	"languages":[
+		{
+			"language":"German",
+			"fluency":"Native speaker"
+		},
+		{
+			"language":"English",
+			"fluency":"Fluent"
+			
+		},
+		{
+			"language":"Spanish",
+			"fluency":"Intermediate"
+			
+		},
+		{
+			"language":"French",
+			"fluency":"Basic"
+			
+		}
+	]
+}
