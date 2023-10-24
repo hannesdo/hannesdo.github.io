@@ -108,6 +108,7 @@
         grid-gap: 0px;
         padding-left: 10px;
         padding-right: 10px;
+        margin-bottom: 3px;
         }
 
         .details {
@@ -122,7 +123,7 @@
         /* Papers block */
 
         div.pubsRow:not(:last-child) {
-        margin-bottom: 10px;
+        margin-bottom: 3px;
         }
 
 
@@ -297,6 +298,9 @@
             {% if resume.basics.website %}
                 <span class='website'><a href="{{ resume.basics.website }}">{{ resume.basics.website }}</a></span><br>
             {% endif %}
+            {% if resume.basics.linkedin %}
+            <span class='linkedin'><a href="{{ resume.basics.linkedin }}">{{ resume.basics.linkedin }}</a></span><br>
+        {% endif %}
             </div>
         </div>
 
@@ -361,15 +365,19 @@
             {% for education in resume.education %}
                 <div class='appointmentsRow'>
                 <div class='school'>
-                {% if education.degree %}
-                {{ education.degree }}
-                {% endif %}
                 {% if education.school %}
-                – {{ education.school }}
+                {{ education.school }}
+                {% endif %}
+                {% if education.degree %}
+                – {{ education.degree }}
                 {% endif %}
             </div>
             <div class='period' style='text-align:right;'>
+                {% if education.endDate %}
                 {{ education.startDate }} – {{ education.endDate }}
+                {% else %}
+                {{ education.startDate }}
+                {% endif %}
             </div>
             {% if education.details|length %}
                 <ul class='details'>
@@ -395,7 +403,7 @@
             <div id='pubsBlock' class="sectionBlock">
             {% for paper in resume.publishedPapers %}
                 <div class='pubsRow'>
-                <span>"{{paper.title}}" 
+                <span style='padding-left:10px;'>"{{paper.title}}" 
                     {% if paper.coauthors %}({{paper.coauthors}}). {% endif %} {{paper.journal}}{% if paper.year %}, {% endif %}{{paper.year}}
                     </span>
                 </div> 
@@ -412,7 +420,7 @@
             <div id='workingBlock' class="sectionBlock">
             {% for paper in resume.workingPapers %}
                 <div class='pubsRow'>
-                    <span>
+                    <span style='padding-left:10px;'>
                         "{{ paper.title }}" 
                         {% if paper.coauthors %}({{ paper.coauthors }}). {% endif %}{{ paper.extra }}
                     </span>     
@@ -429,25 +437,24 @@
         </div>
 
         {% if resume.teaching|length %}
-            <div id='teachingBlock' class="sectionBlock">
+            <div id='appointmentsBlock' class="sectionBlock">
             {% for teaching in resume.teaching %}
-                <div class='teachingRow' style="padding-bottom:5px;">
-                <span style='padding-bottom:5px; display:block;'><b>{{ teaching.name }} </b>- {{ teaching.level }}</span> 
-                {% if teaching.schools|length %}
+                <div class='appointmentsRow'>
+                <div class='school'>
+                    {{ teaching.name }}
+                    – {{ teaching.level }}
+                </div>
+                <div class='period' style='text-align:right;'>
+                    {% if teaching.endDate %}
+                    {{ teaching.startDate }} – {{ teaching.endDate }}
+                    {% else %}
+                    {{ teaching.startDate }}
+                    {% endif %}
+                </div>
+                {% if teaching.details|length %}
                     <ul class='details'>
-                    {% for school in teaching.schools %}
-                        <li class='detailRow'> <span style='text-align:left;'>{{ school.schoolName }} </span>
-                        <span class='period' style='float: right;'>
-                            {{ school.period }}
-                        </span>
-                        </li>
-                        {% if school.notes|length %}
-                        <div style="margin-bottom: 5px;">
-                        {% for note in school.notes %}
-                            <div style="margin-left: 10px; margin-right:150px;">- {{ note.note }}</div>
-                        {% endfor %}
-                        </div>
-                        {% endif %}
+                    {% for detail in teaching.details %}
+                        <li class='detailRow'> {{ detail.text }}</li>
                     {% endfor %}
                     </ul>
                 {% endif %}
@@ -474,7 +481,11 @@
                     {% endif %}
                 </div>
                 <div class='period' style='text-align:right;'>
+                    {% if industry.endDate %}
                     {{ industry.startDate }} – {{ industry.endDate }}
+                    {% else %}
+                    {{ industry.startDate }}
+                    {% endif %}
                 </div>
                 {% if industry.details|length %}
                     <ul class='details'>
@@ -489,7 +500,8 @@
         {% endif %}
 
         <!-- Service -->
-
+        
+        {% if resume.presentations.year %}
         <div class='lineBlock'>
             <div class='lineHeader'>Invited Presentations</div>
             <hr class='hline'>
@@ -502,7 +514,9 @@
                 </div> 
             {% endfor %}
         </div>
-                
+        {% endif %}
+
+        {% if resume.talks.year %}
         <div class='lineBlock'>
             <div class='lineHeader'>Invited Talks</div>
             <hr class='hline'>
@@ -515,7 +529,9 @@
             </div> 
             {% endfor %}
         </div>
+        {% endif %}
 
+        {% if resume.journalRef.name %}
         <div class='lineBlock'>
             <div class='lineHeader'>External Service</div>
             <hr class='hline'>
@@ -537,6 +553,8 @@
             {% endfor %}
         </ul>
 
+        {% endif %}
+
         <!-- Footer -->
 
         <div class='lineBlock'>
@@ -548,12 +566,11 @@
 
         <div id='skills' class="sectionBlock">
             <div class='sectionName'>
-                <span>SKILLS</span>
+                <span style='padding-left: 10px;'>Tools</span>
             </div>
             <div class='sectionContent'>
                 {% for skill in resume.skills %}
                     <div class='skillBlock'>
-                        <span class='title'>{% if skill.name %}{{ skill.name }}{% endif %}{% if skill.level %} <em>({{ skill.level }})</em>{% endif %}:</span>
                         {% if skill.keywords|length %}
                             {% for keyword in skill.keywords %}
                             <span>{{ keyword }}</span>{{ ", " if not loop.last }}
@@ -569,15 +586,13 @@
             </div>
         </div>
 
-        <hr class='hline'>
-
         {% endif %}
 
         {% if resume.languages|length %}
 
         <div id='languages' class="sectionBlock">
             <div class='sectionName'>
-                <span>LANGUAGES</span>
+                <span  style='padding-left: 10px;'>Languages</span>
             </div>
             <div class='sectionContent'>
                 {% for language in resume.languages %}

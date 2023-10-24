@@ -10,13 +10,13 @@ now_Pacific = datetime.now(ZoneInfo('US/Pacific'))
 print("STATUS : Script started")
 
 ## Check for current cwd
-print(os.getcwd())
+## print(os.getcwd())
 
 ## Change cwd to path of .py file
-p = os.path.abspath(__file__)
-dname = os.path.dirname(p)
-os.chdir(dname)
-print(os.getcwd())
+## p = os.path.abspath(__file__)
+## dname = os.path.dirname(p)
+## os.chdir(dname)
+## print(os.getcwd())
 
 ## Load database from JSON file
 

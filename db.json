@@ -4,15 +4,10 @@
 		"label":"Curriculum Vitae",
 		"currentAffiliation":"University of Muenster",
 		"addressOffice":"Universitaetsstrasse 14-16",
-		"addressDetails":"48143 Muenster",
+		"addressDetails":"48143 Muenster (Germany)",
 		"email":"hannes.doering@wiwi.uni-muenster.de",
 		"website":"https://www.hannesdoering.com",
-		"profiles":[
-			{
-				"label":"LinkedIn",
-				"url":"https://www.linkedin.com/in/hannes-doering"
-			}
-		]
+		"linkedin": "https://www.linkedin.com/in/hannes-doering"
 	},
 	"appointments":[
 		{
@@ -36,11 +31,11 @@
 			"school":"University of Washington",
 			"degree":"Visiting PhD (4 months)",
 			"startDate":"2023",
-			"endDate":"2024"
+			"endDate":[]
 		},
 		{
 			"school":"University of Cologne",
-			"degree":"MSc in Business Administration (Accounting)",
+			"degree":"MSc in Accounting",
 			"startDate":"2017",
 			"endDate":"2019"
 		},
@@ -48,7 +43,7 @@
 			"school":"University of British Columbia",
 			"degree":"Visiting Student (4 months)",
 			"startDate":"2018",
-			"endDate":"2018"
+			"endDate":[]
 		},
 		{
 			"school":"University of Tuebingen",
@@ -60,7 +55,7 @@
 			"school":"Universidad de Monterrey",
 			"degree":"Visiting Student (4 months)",
 			"startDate":"2014",
-			"endDate":"2014"
+			"endDate":[]
 		}
 	],
 	"publishedPapers":[
@@ -126,55 +121,87 @@
 		{
 			"name":"Performance Management Strategy Execution",
 			"level":"Master's Level (Fall)",
-			"schools":[
-				{
-					"schoolName":"University of Muenster",
-					"period":"2019 - 2022"
-				}
-			]
+			"startDate":"2019",
+			"endDate":"2022"
 		},
 		{
 			"name":"Organizational Design and Financial Management",
 			"level":"Master's Level (Summer)",
-			"schools":[
-				{
-					"schoolName":"University of Muenster",
-					"period":"2020 - 2024"
-				}
-			]
+			"startDate":"2020",
+			"endDate":"2024"
 		},
 		{
 			"name":"Entrepreneurial Management",
 			"level":"MBA (Summer)",
-			"schools":[
-				{
-					"schoolName":"University of Muenster Continuing Education",
-					"period":"2021 - 2022, 2024"
-				}
-			]
+			"startDate":"2021, 2023",
+			"endDate":[]
 		}
 	],
 	"industries":[
 		{
 			"school":"Trumpf Financial Services",
-			"position":"Intern (5 months)",
+			"position":"Risk Management (Intern, 5 months)",
 			"startDate":"2017",
-			"endDate":"2017",
-			"details":"Risk Management"
+			"endDate":[]
 		},
 		{
 			"school":"Trumpf Laser Technologies",
-			"position":"Intern (6 months)",
+			"position":"Business Segment Controlling (Intern, 6 months)",
 			"startDate":"2016",
-			"endDate":"2017",
-			"details":"Business Segment Controlling"
+			"endDate":[]
 		},
 		{
 			"school":"Robert Bosch",
-			"position":"Intern (3 months)",
-			"startDate":"2015",
-			"endDate":"2016",
-			"details":"Group Accounting and Consolidation"
+			"position":"Group Accounting (Intern, 3 months)",
+			"startDate":"2016",
+			"endDate":[]
+		}
+	],
+	"presentations":[
+		{
+			"year":[],
+			"schools":[
+				{
+					"schoolName":[]
+				}
+			]
+		}
+	],
+	"talks":[
+		{
+			"date":[],
+			"title":[],
+			"location":[],
+            "links" : []
+		}
+	],
+	"journalRef":[
+		{
+			"name":[]
+		}
+	],
+	"conferenceRef":[
+		{
+			"name":[]
+		}
+	],
+	"skills":[
+		{
+			"name":"Tools",
+			"details":[
+				{
+					"text":"Stata"
+				},
+				{
+					"text":"Excel"
+				},
+				{
+					"text":"Powerpoint"
+				},
+				{
+					"text":"Word"
+				}
+			]
 		}
 	],
 	"languages":[
