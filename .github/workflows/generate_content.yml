@@ -40,7 +40,7 @@ jobs:
           path: 'public'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v2
 
         ## Optional: copy your vitea PDF file to a remote host (e.g., company profile). 
 
