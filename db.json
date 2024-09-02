@@ -5,17 +5,16 @@
 		"currentAffiliation":"University of Muenster",
 		"addressOffice":"Universitaetsstrasse 14-16",
 		"addressDetails":"48143 Muenster (Germany)",
-		"email":"hannes.doering@wiwi.uni-muenster.de",
+		"email":"hd[at]hannesdoering.com",
 		"website":"https://www.hannesdoering.com",
 		"linkedin": "https://www.linkedin.com/in/hannes-doering"
 	},
 	"appointments":[
 		{
 			"school":"University of Muenster",
-			"position":"Research & Teaching Assistant",
+			"position":"Research & Teaching Associate",
 			"startDate":"2019",
-			"endDate":"2024",
-			"details":"Research and teaching at the intersections of corporate performance management, sustainability, and entrepreneurship"
+			"endDate":"2024"
 		}
 	],
 	"education":[
@@ -61,15 +60,8 @@
 			"coauthors":[],
 			"year":"2024",
 			"title":"Management Control Perpsectives on Organizational Change: Evidence on Transformation Talk, Sustainability Targets, and Objectives and Key Results",
-			"journal":"Inauguraldissertation, Muenster",
-			"links":[
-				{
-					"href":[],
-					"label":"dissertation"
-				}
-			],
-			"abstract":"Objectives and Key Results (OKRs) werden vor allem mit jungen Start-ups und zunehmend auch mit grossen Konzernen in Verbindung gebracht. Aber wie verbreitet und erfolgreich ist dieses neue Konzept in deutschen Unternehmen wirklich? Fehlte es bislang an empirischen Erkenntnissen hierzu, schließt nun eine branchenübergreifende Studie zum Einsatz von OKRs im deutschen Mittelstand diese Lücke."
-		},
+			"journal":"Inauguraldissertation, Muenster"
+			},
 		{
 			"coauthors":"with Martin Artz",
 			"year":"2023",
@@ -99,10 +91,18 @@
 	],
 	"workingPapers":[
 		{
-			"coauthors":[],
-			"title":[],
-			"abstract":[],
-			"links":[],
+			"coauthors":"with Martin Artz and Jens Boeke",
+			"title":"Performance Management Through Target Adjustments: The Case of Carbon Reduction Targets",
+			"abstract":"",
+			"links":"",
+			"extra":"",
+			"status":""
+		},
+		{
+			"coauthors":"",
+			"title":"Target Design and Firm Maturity: Evidence on Objectives and Key Results",
+			"abstract":"",
+			"links":"",
 			"extra":"",
 			"status":""
 		}
@@ -210,7 +210,7 @@
 	"languages":[
 		{
 			"language":"German",
-			"fluency":"Native speaker"
+			"fluency":"Native"
 		},
 		{
 			"language":"English",
