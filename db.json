@@ -14,28 +14,26 @@
 			"school":"University of Muenster",
 			"position":"Research & Teaching Assistant",
 			"startDate":"2019",
-			"endDate":"present",
-			"details":[
-				
-			]
+			"endDate":"2024",
+			"details":"Research and teaching at the intersections of corporate performance management, sustainability, and entrepreneurship"
 		}
 	],
 	"education":[
 		{
 			"school":"University of Muenster",
-			"degree":"PhD in Accounting",
+			"degree":"PhD in Accounting (Dr. rer. pol)",
 			"startDate":"2019",
-			"endDate":"present"
+			"endDate":"2024"
 		},
 		{
 			"school":"University of Washington",
-			"degree":"Visiting PhD (4 months)",
+			"degree":"Visiting Scholar (4 months)",
 			"startDate":"2023",
 			"endDate":[]
 		},
 		{
 			"school":"University of Cologne",
-			"degree":"MSc in Accounting",
+			"degree":"MSc in Accounting and Taxation",
 			"startDate":"2017",
 			"endDate":"2019"
 		},
@@ -60,6 +58,19 @@
 	],
 	"publishedPapers":[
 		{
+			"coauthors":[],
+			"year":"2024",
+			"title":"Management Control Perpsectives on Organizational Change: Evidence on Transformation Talk, Sustainability Targets, and Objectives and Key Results",
+			"journal":"Inauguraldissertation, Muenster",
+			"links":[
+				{
+					"href":[],
+					"label":"dissertation"
+				}
+			],
+			"abstract":"Objectives and Key Results (OKRs) werden vor allem mit jungen Start-ups und zunehmend auch mit grossen Konzernen in Verbindung gebracht. Aber wie verbreitet und erfolgreich ist dieses neue Konzept in deutschen Unternehmen wirklich? Fehlte es bislang an empirischen Erkenntnissen hierzu, schließt nun eine branchenübergreifende Studie zum Einsatz von OKRs im deutschen Mittelstand diese Lücke."
+		},
+		{
 			"coauthors":"with Martin Artz",
 			"year":"2023",
 			"title":"OKRs im deutschen Mittelstand",
@@ -70,7 +81,7 @@
 					"label":"paper"
 				}
 			],
-			"abstract":"Objectives and Key Results (OKRs) werden vor allem mit jungen Start-ups und zunehmend auch mit großen Konzernen in Verbindung gebracht. Aber wie verbreitet und erfolgreich ist dieses neue Konzept in deutschen Unternehmen wirklich? Fehlte es bislang an empirischen Erkenntnissen hierzu, schließt nun eine branchenübergreifende Studie zum Einsatz von OKRs im deutschen Mittelstand diese Lücke."
+			"abstract":"Objectives and Key Results (OKRs) werden vor allem mit jungen Start-ups und zunehmend auch mit grossen Konzernen in Verbindung gebracht. Aber wie verbreitet und erfolgreich ist dieses neue Konzept in deutschen Unternehmen wirklich? Fehlte es bislang an empirischen Erkenntnissen hierzu, schließt nun eine branchenübergreifende Studie zum Einsatz von OKRs im deutschen Mittelstand diese Lücke."
 		},
 		{
 			"coauthors":"with Martin Artz",
@@ -88,9 +99,9 @@
 	],
 	"workingPapers":[
 		{
-			"coauthors":"with Martin Artz and Jens Boeke",
-			"title":"Firms' Motivation for Setting Science-Based Carbon Reduction Targets",
-			"abstract":"INSERT",
+			"coauthors":[],
+			"title":[],
+			"abstract":[],
 			"links":[],
 			"extra":"",
 			"status":""
@@ -112,20 +123,20 @@
 	"teaching":[
 		{
 			"name":"Performance Management Strategy Execution",
-			"level":"Master's Level (Fall)",
+			"level":"Master's Level",
 			"startDate":"2019",
 			"endDate":"2022"
 		},
 		{
 			"name":"Organizational Design and Financial Management",
-			"level":"Master's Level (Summer)",
+			"level":"Master's Level",
 			"startDate":"2020",
 			"endDate":"2024"
 		},
 		{
 			"name":"Entrepreneurial Management",
-			"level":"MBA (Summer)",
-			"startDate":"2021, 2023",
+			"level":"MBA",
+			"startDate":"2021, 2023, 2024",
 			"endDate":[]
 		}
 	],
