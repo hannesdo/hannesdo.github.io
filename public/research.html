@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/simple.css">
+    <title>Hannes Doering</title>
+
+
+</head>
+<body>
+  <header>
+    <h1>Hannes Doering</h1>
+    <p>PhD in Accounting</p>
+    <p>University of Muenster, Germany</p>
+    
+    <nav>
+        <a href="/" class="current">About me</a>
+        <a href="/research.html" >Research</a>
+        <a href="/blog_posts.html" >Blog Posts</a>
+        <a href="/Vitae.pdf" target = "_blank" >CV</a>     
+    </nav>
+  </header>
+
+  <main>
+    <section>
+        <h3>Publications</h3>
+        
+            <p style = "margin-bottom: 5px;">
+                <b>Management Control Perpsectives on Organizational Change: Evidence on Transformation Talk, Sustainability Targets, and Objectives and Key Results</b><br>
+                <i>Inauguraldissertation, Muenster - 2024</i><br>
+            </p>
+            
+            <details>
+                <summary>Abstract</summary>
+                <p style="text-align: justify;">Objectives and Key Results (OKRs) werden vor allem mit jungen Start-ups und zunehmend auch mit grossen Konzernen in Verbindung gebracht. Aber wie verbreitet und erfolgreich ist dieses neue Konzept in deutschen Unternehmen wirklich? Fehlte es bislang an empirischen Erkenntnissen hierzu, schließt nun eine branchenübergreifende Studie zum Einsatz von OKRs im deutschen Mittelstand diese Lücke.</p>
+            </details>
+            
+            
+        
+            <p style = "margin-bottom: 5px;">
+                <b>OKRs im deutschen Mittelstand</b><br>
+                <i>Controlling & Management Review - 2023 (<a href = "https://link.springer.com/article/10.1007/s12176-022-1015-7" target = "_blank">paper</a>)</i><br>
+                <i>with Martin Artz</i>
+            </p>
+            
+            <details>
+                <summary>Abstract</summary>
+                <p style="text-align: justify;">Objectives and Key Results (OKRs) werden vor allem mit jungen Start-ups und zunehmend auch mit grossen Konzernen in Verbindung gebracht. Aber wie verbreitet und erfolgreich ist dieses neue Konzept in deutschen Unternehmen wirklich? Fehlte es bislang an empirischen Erkenntnissen hierzu, schließt nun eine branchenübergreifende Studie zum Einsatz von OKRs im deutschen Mittelstand diese Lücke.</p>
+            </details>
+            
+            
+        
+            <p style = "margin-bottom: 5px;">
+                <b>Exploiting Data from Field Experiments</b><br>
+                <i>Handbook of Market Research - 2021 (<a href = "https://link.springer.com/referenceworkentry/10.1007/978-3-319-57413-4_36" target = "_blank">book contribution</a>)</i><br>
+                <i>with Martin Artz</i>
+            </p>
+            
+            <details>
+                <summary>Abstract</summary>
+                <p style="text-align: justify;">This chapter gives an introduction on how to exploit data from field experiments and aims to provide an intuitive understanding for managers and researchers alike. We outline the relevance and hurdles in identifying causal effects compared to observing purely correlational associations in studies which take place in the real world. We further provide a framework to classify different kinds of field experiments, such as quasi field experiments and natural field experiments. The core of this chapter focuses on giving an understanding of three standard econometric methods to exploit data from field experiments: difference-in-differences, regression discontinuity, and instrumental variables. For each method, we provide an intuitive understanding of the core features and its critical assumptions. We complement those explanations with an in-depth look at one practical application of each method in a field experiment setting and with a variety of practical examples from recently published research. Lastly, we provide a brief overview on how to implement each method in standard software packages such as STATA, R, and SPSS.</p>
+            </details>
+            
+            
+        
+    </section>
+
+    <section>
+        <h3 style = "margin-top: 25px;">Working projects</h3>
+        
+        <p style = "margin-bottom: 5px;">
+            <b>Performance Management Through Target Adjustments: The Case of Carbon Reduction Targets</b><br>
+            <i>with Martin Artz and Jens Boeke</i><br>
+        </p>
+
+        <p style = "margin-bottom: 5px;">
+            <b>Target Design and Firm Maturity: Evidence on Objectives and Key Results</b><br>
+            <i>Single Authored</i><br>
+        </p>
+        
+    
+    </section>
+</main>
+
+  <footer>
+    <p>This website is based on <a href = "https://github.com/TiesdeKok/TiesdeKok.github.io" target = "_blank">Ties' Python script</a> and <a href = "https://simplecss.org/" target= "_blank">simple.css</a>.</p>
+  </footer>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-90851464-1', 'auto');
+    ga('send', 'pageview');
+
+     
+    var links = document.querySelectorAll('a');
+    Array.prototype.map.call(links, function(item) {
+        if (item.host != document.location.host) {
+            item.addEventListener('click', function() {
+                var action = item.getAttribute('data-action') || 'follow';
+                ga('send', 'event', 'outbound', action, item.href);
+            });
+        }
+    });
+    </script>
+</body>
+</html>
